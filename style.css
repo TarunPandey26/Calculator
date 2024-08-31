@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(#FFFACD,#663399 );
+}
+
+.container{
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+}
+
+input{
+    height: 8vh;
+    width: 14vw;
+    border-radius: 13%;
+    background: lightgreen ;  
+    border: none;
+    font-size: 27px;                           /* input box font size */
+    box-shadow: 0px -6px 20px rgba(0, 0, 0, 0.5)  ;   /* input box shadow setup */
+    text-align: right;
+    margin: 4px;
+}
+
+input::placeholder{                    /* Input placeholder editor */
+
+    color: black;
+}
+
+.button{                                 /* Collection of and it is the class of all Buttons which are used in calculator*/ 
+
+    margin: 7px;
+}
+
+button{                                       /* Main function of the button is uses here not the class... setting the button size border background color etc..*/
+
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    border-radius: 36%;
+    border: none;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    box-shadow: -2px -2px 11px;
+}
+/* When the cursor are going to the button then shadow activate and the shadow color is white and giving blur is 20px*/
+button:hover{
+    cursor: pointer;
+    box-shadow: -1px -2px 20px whitesmoke;
+}
+/* Giving the different look of Equal button*/
+.equal{
+    background-color: #F39C12;
+    font-size: 22px;
+}
+/* Given the different look of all the operators*/
+.operator{
+    color: #f67c14;
+}
+
+/*copied by google fonts*/
+/*<uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 400
+
+.playwrite-cu-<uniquifier>*/
+ .fontseries{
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
